@@ -3,8 +3,8 @@ import {
   createBackendPlugin,
 } from '@backstage/backend-plugin-api';
 import { createRouter } from './router';
-import { TimelineDataProvider, timelineExtensionPoint } from './extensions';
 import { DefaultTimelineService } from './services/DefaultTimelineService';
+import { TimelineDataProvider, timelineExtensionPoint } from '@kurtaking/backstage-plugin-timeline-node';
 
 /**
  * timelinePlugin backend plugin
@@ -15,6 +15,7 @@ export const timelinePlugin = createBackendPlugin({
   pluginId: 'timeline',
   register(env) {
     const dataProviders = new Array<TimelineDataProvider>();
+
     env.registerExtensionPoint(timelineExtensionPoint, {
       addDataProvider(provider) {
         dataProviders.push(provider);

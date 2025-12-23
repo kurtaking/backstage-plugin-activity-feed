@@ -1,7 +1,7 @@
 import express from 'express';
 import Router from 'express-promise-router';
-import { TimelineService } from './services';
 import { HttpAuthService } from '@backstage/backend-plugin-api';
+import { TimelineService } from '@kurtaking/backstage-plugin-timeline-node';
 
 type CreateRouterOptions = {
   httpAuth: HttpAuthService;

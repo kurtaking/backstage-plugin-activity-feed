@@ -1,6 +1,5 @@
 import { LoggerService } from '@backstage/backend-plugin-api';
-import { TimelineItem, TimelineService } from './TimelineService';
-import { TimelineDataProvider } from '../extensions';
+import { TimelineDataProvider, TimelineItem, TimelineService } from '@kurtaking/backstage-plugin-timeline-node';
 
 export class DefaultTimelineService implements TimelineService {
   readonly #logger: LoggerService;

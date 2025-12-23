@@ -13,5 +13,4 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-export { timelineServiceRef } from './timelineServiceRef';
-export type { TimelineService, TimelineItem } from './TimelineService';
+export { DefaultTimelineService } from './DefaultTimelineService';
