@@ -28,4 +28,5 @@ export interface TimelineItem {
 
 export interface TimelineService {
   timeline(): Promise<{ items: TimelineItem[] }>;
+  listDataProviders(): Promise<TimelineDataProvider[]>;
 }

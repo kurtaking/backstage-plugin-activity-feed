@@ -31,5 +31,12 @@ export async function createRouter({
     });
   });
 
+  router.get('/data-providers', async (_req, res) => {
+    const dataProviders = await timelineService.listDataProviders();
+    res.status(200).json({
+      dataProviders,
+    });
+  });
+
   return router;
 }

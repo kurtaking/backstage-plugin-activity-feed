@@ -14,6 +14,10 @@ export class DefaultTimelineService implements TimelineService {
     this.#dataProviders = dataProviders;
   }
 
+  async listDataProviders(): Promise<TimelineDataProvider[]> {
+    return this.#dataProviders;
+  }
+
   async timeline(): Promise<{ items: TimelineItem[] }> {
     const results = await Promise.allSettled(
       this.#dataProviders.map(provider => provider.getItems({}))
