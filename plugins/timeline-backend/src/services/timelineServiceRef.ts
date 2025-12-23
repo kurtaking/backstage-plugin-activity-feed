@@ -1,7 +1,11 @@
-import { createServiceRef, createServiceFactory, coreServices } from "@backstage/backend-plugin-api";
-import { Expand } from "@backstage/types";
-import { TimelineService } from "./TimelineService";
-import { DefaultTimelineService } from "./DefaultTimelineService";
+import {
+  createServiceRef,
+  createServiceFactory,
+  coreServices,
+} from '@backstage/backend-plugin-api';
+import { Expand } from '@backstage/types';
+import { TimelineService } from './TimelineService';
+import { DefaultTimelineService } from './DefaultTimelineService';
 
 export const timelineServiceRef = createServiceRef<Expand<TimelineService>>({
   id: 'timeline',
