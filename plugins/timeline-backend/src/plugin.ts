@@ -2,9 +2,9 @@ import {
   coreServices,
   createBackendPlugin,
 } from '@backstage/backend-plugin-api';
+import { TimelineDataProvider, timelineExtensionPoint } from '@kurtaking/backstage-plugin-timeline-node';
 import { createRouter } from './router';
 import { DefaultTimelineService } from './services/DefaultTimelineService';
-import { TimelineDataProvider, timelineExtensionPoint } from '@kurtaking/backstage-plugin-timeline-node';
 
 /**
  * timelinePlugin backend plugin

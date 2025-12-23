@@ -1,0 +1,39 @@
+{
+  "name": "@internal/backstage-plugin-timeline-backend-module-announcements",
+  "version": "0.1.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "description": "The announcements backend module for the timeline plugin.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.cjs.js",
+    "types": "dist/index.d.ts"
+  },
+  "backstage": {
+    "role": "backend-plugin-module",
+    "pluginId": "timeline"
+  },
+  "scripts": {
+    "start": "backstage-cli package start",
+    "build": "backstage-cli package build",
+    "lint": "backstage-cli package lint",
+    "test": "backstage-cli package test",
+    "clean": "backstage-cli package clean",
+    "prepack": "backstage-cli package prepack",
+    "postpack": "backstage-cli package postpack"
+  },
+  "dependencies": {
+    "@backstage-community/plugin-announcements-node": "^0.12.0",
+    "@backstage/backend-plugin-api": "^1.6.0",
+    "@kurtaking/backstage-plugin-timeline-node": "workspace:^"
+  },
+  "devDependencies": {
+    "@backstage/backend-test-utils": "^1.10.2",
+    "@backstage/cli": "^0.35.0"
+  },
+  "files": [
+    "dist"
+  ]
+}

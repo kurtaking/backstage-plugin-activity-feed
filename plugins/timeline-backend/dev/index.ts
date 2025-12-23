@@ -38,5 +38,7 @@ backend.add(
 backend.add(import('../src'));
 // eslint-disable-next-line @backstage/no-relative-monorepo-imports
 backend.add(import('../../timeline-backend-module-mock/src'))
+// eslint-disable-next-line @backstage/no-relative-monorepo-imports
+backend.add(import('../../timeline-backend-module-announcements/src'))
 
 backend.start();

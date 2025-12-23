@@ -1528,6 +1528,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@backstage-community/plugin-announcements-common@npm:^0.14.0":
+  version: 0.14.0
+  resolution: "@backstage-community/plugin-announcements-common@npm:0.14.0"
+  dependencies:
+    "@backstage/plugin-permission-common": "npm:^0.9.3"
+  checksum: 10c0/060a10943555e476f6dce732abaf546987ac6b8aba04ee7b5897f46399d0048470c0f9ee087db950b3d869214c2cd0556f5354038e44a0b40bead25b3d2b8800
+  languageName: node
+  linkType: hard
+
+"@backstage-community/plugin-announcements-node@npm:^0.12.0":
+  version: 0.12.0
+  resolution: "@backstage-community/plugin-announcements-node@npm:0.12.0"
+  dependencies:
+    "@backstage-community/plugin-announcements-common": "npm:^0.14.0"
+    "@backstage/backend-plugin-api": "npm:^1.6.0"
+    "@backstage/errors": "npm:^1.2.7"
+  checksum: 10c0/e5ea3432245b1ede5b8a611587cba10cd045ddb5016a6e5be3644975467b51ac0c2231ce42b6ca2932dec55d166cdc65b4bab6c8130a747184ccac676957f10f
+  languageName: node
+  linkType: hard
+
 "@backstage/backend-app-api@npm:^1.4.0":
   version: 1.4.0
   resolution: "@backstage/backend-app-api@npm:1.4.0"
@@ -2605,10 +2625,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@internal/backstage-plugin-timeline-backend-module-mock@workspace:plugins/timeline-backend-module-mock":
+"@internal/backstage-plugin-timeline-backend-module-announcements@workspace:plugins/timeline-backend-module-announcements":
   version: 0.0.0-use.local
-  resolution: "@internal/backstage-plugin-timeline-backend-module-mock@workspace:plugins/timeline-backend-module-mock"
+  resolution: "@internal/backstage-plugin-timeline-backend-module-announcements@workspace:plugins/timeline-backend-module-announcements"
   dependencies:
+    "@backstage-community/plugin-announcements-node": "npm:^0.12.0"
     "@backstage/backend-plugin-api": "npm:^1.6.0"
     "@backstage/backend-test-utils": "npm:^1.10.2"
     "@backstage/cli": "npm:^0.35.0"
@@ -3182,6 +3203,17 @@ __metadata:
   checksum: 10c0/4e02f43a203aa2d86c0c1e175aaacb44ecd331c22c0c5cbc84da46165dad225e12b720e229f17917b0145bbe9bf4dd466aa495bc8cd0dbb021635bfdb0f744ad
   languageName: node
   linkType: hard
+
+"@kurtaking/backstage-plugin-timeline-backend-module-mock@workspace:plugins/timeline-backend-module-mock":
+  version: 0.0.0-use.local
+  resolution: "@kurtaking/backstage-plugin-timeline-backend-module-mock@workspace:plugins/timeline-backend-module-mock"
+  dependencies:
+    "@backstage/backend-plugin-api": "npm:^1.6.0"
+    "@backstage/backend-test-utils": "npm:^1.10.2"
+    "@backstage/cli": "npm:^0.35.0"
+    "@kurtaking/backstage-plugin-timeline-node": "workspace:^"
+  languageName: unknown
+  linkType: soft
 
 "@kurtaking/backstage-plugin-timeline-backend@workspace:plugins/timeline-backend":
   version: 0.0.0-use.local
