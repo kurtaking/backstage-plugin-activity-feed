@@ -1,4 +1,4 @@
-# [Backstage](https://backstage.io)
+# backstage-plugin-timeline
 
 This is your newly scaffolded Backstage App, Good Luck!
 
